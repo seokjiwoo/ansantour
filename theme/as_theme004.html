@@ -1,0 +1,193 @@
+<?
+	include $_SERVER["DOCUMENT_ROOT"]."/project/inc/header.html";
+?>
+<?
+	$lnb01 ="on";
+	$category = "theme";
+	include $_SERVER["DOCUMENT_ROOT"]."/project/inc/lnb.html";
+?>
+			<!-- contents  -->
+			<div class="contents">
+				<div class="title_Area bdr2">
+					<h2>여행코스 짜기<span> / 코스관광</span></h2>
+					<p class="location">
+						<a href="#">테마관광</a>&gt;
+						<a href="#">코스관광</a>&gt;
+						<strong>안산시티투어</strong>
+					</p>
+				</div>
+				<div class="grayBox mt20">
+					<ul>
+						<li>관광객 스스로 안산 여행코스를 만들 수 있습니다.</li>
+						<li>최종 저장한 관광코스는 메뉴 “나만의 관광코스 &gt; 관광코스 &gt; 목록 으로 저장됩니다.</li>
+						<li>관광코스 만들기는 기초적인 정보제공 및 가이드를 목적을 하고 있어 정보제공에 미흡한 부분이 있을수 있습니다.</li>
+					</ul>
+				</div>
+				<div class="courseName mt20">
+					<label for="courseName">관광코스 이름</label>
+					<input type="text" id="courseName" />
+				</div>
+				<div class="sub_titArea mt30"><h3 class="tit">대표 관광지 (코스 일정을 선택해 주세요.)</h3></div>
+				<ul class="courseList mt20">
+					<li class="mt0">
+						<input type="checkbox" id="course01" />
+						<label for="course01">01. 대부도</label>
+					</li>
+					<li class="mt0">
+						<input type="checkbox" id="course02" />
+						<label for="course02">02. 대부바다향기테마파크</label>
+					</li>
+					<li class="mt0">
+						<input type="checkbox" id="course03" />
+						<label for="course03">03. 대부도음식문화거리</label>
+					</li>
+					<li class="mt0">
+						<input type="checkbox" id="course04" />
+						<label for="course04">04. 노정봉폭포공원</label>
+					</li>
+					<li>
+						<input type="checkbox" id="course05" />
+						<label for="course05">05. 시화호 조력발전소</label>
+					</li>
+					<li>
+						<input type="checkbox" id="course06" />
+						<label for="course06">06. 안산화랑오토캠핑장</label>
+					</li>
+					<li>
+						<input type="checkbox" id="course07" />
+						<label for="course07">07. 안산호수공원</label>
+					</li>
+					<li>
+						<input type="checkbox" id="course08" />
+						<label for="course08">08. 탄도항</label>
+					</li>
+					<li>
+						<input type="checkbox" id="course09" />
+						<label for="course09">09. 안산대습지공원</label>
+					</li>
+					<li>
+						<input type="checkbox" id="course10" />
+						<label for="course10">10. 안산어촌민속전시관</label>
+					</li>
+					<li>
+						<input type="checkbox" id="course11" />
+						<label for="course11">11. 동주염전</label>
+					</li>
+					<li>
+						<input type="checkbox" id="course12" />
+						<label for="course12">12. 쌍계사</label>
+					</li>
+				</ul>
+				<div class="mt20"><img src="../images/img/course_map.jpg" class="m_img" alt="" /></div>
+				<div class="sub_titArea mt30"><h3 class="tit">나만의 관광코스 확인 및 편집</h3></div>
+
+				<ul class="dayList mt20">
+					<li class="on"><a href="#">1일차 보기</a></li>
+					<li><a href="#">2일차 보기</a></li>
+					<li><a href="#">3일차 보기</a></li>
+					<li><a href="#">4일차 보기</a></li>
+					<li><a href="#">5일차 보기</a></li>
+					<li class="dayAdd"><a href="#">+일정추가</a></li>
+				</ul>
+
+				<ul class="courseFlan mt20">
+					<li class="mt0">
+						<img src="../images/img/course_day01.jpg" alt="" />
+						<div class="info1">
+							<strong>안산역</strong>
+						</div>
+						<div class="info2">
+							<select class="fl" title="출발지 선택">
+								<option>출발지 선택</option>
+							</select>
+							<a href="#" class="traffic fr">교통편보기</a>
+						</div>
+					</li>
+					<li class="mt0">
+						<a href="#" class="fBtn flanPrev"><img src="../images/btn/day_prev.jpg" alt="일정앞으로변경" /></a>
+						<a href="#" class="fBtn flanNext"><img src="../images/btn/day_next.jpg" alt="일정뒤로변경" /></a>
+						<img src="../images/img/course_day02.jpg" alt="" />
+						<div class="info1">
+							<strong>동주염전</strong>
+							<span>체류시간 : 120분</span>
+						</div>
+						<div class="info2">
+							<a href="#" class="viewmore fl">상세보기</a>
+							<a href="#" class="walking fr">도보로 이동</a>
+						</div>
+						<span class="num">1</span>
+						<span class="numBg"></span>
+					</li>
+					<li class="mt0">
+						<a href="#" class="fBtn flanPrev"><img src="../images/btn/day_prev.jpg" alt="일정앞으로변경" /></a>
+						<a href="#" class="fBtn flanNext"><img src="../images/btn/day_next.jpg" alt="일정뒤로변경" /></a>
+						<img src="../images/img/course_day03.jpg" alt="" />
+						<div class="info1">
+							<strong>바다향기테마파크</strong>
+							<span>체류시간 : 120분</span>
+						</div>
+						<div class="info2">
+							<a href="#" class="viewmore fl">상세보기</a>
+							<a href="#" class="traffic fr">교통편보기</a>
+						</div>
+						<span class="num">2</span>
+						<span class="numBg"></span>
+					</li>
+					<li>
+						<a href="#" class="fBtn flanPrev"><img src="../images/btn/day_prev.jpg" alt="일정앞으로변경" /></a>
+						<a href="#" class="fBtn flanNext"><img src="../images/btn/day_next.jpg" alt="일정뒤로변경" /></a>
+						<img src="../images/img/course_day04.jpg" alt="" />
+						<div class="info1">
+							<strong>대부도 해솔길</strong>
+							<span>체류시간 : 120분</span>
+						</div>
+						<div class="info2">
+							<a href="#" class="viewmore fl">상세보기</a>
+							<a href="#" class="walking fr">도보로 이동</a>
+						</div>
+						<span class="num">3</span>
+						<span class="numBg"></span>
+					</li>
+					<li>
+						<a href="#" class="fBtn flanPrev"><img src="../images/btn/day_prev.jpg" alt="일정앞으로변경" /></a>
+						<a href="#" class="fBtn flanNext"><img src="../images/btn/day_next.jpg" alt="일정뒤로변경" /></a>
+						<img src="../images/img/course_day05.jpg" alt="" />
+						<div class="info1">
+							<strong>바다향기테마파크</strong>
+							<span>체류시간 : 120분</span>
+						</div>
+						<div class="info2">
+							<a href="#" class="viewmore fl">상세보기</a>
+							<a href="#" class="traffic fr">교통편보기</a>
+						</div>
+						<span class="num">4</span>
+						<span class="numBg"></span>
+					</li>
+					<li class="ml0 bgnone">
+						<img src="../images/img/course_day01.jpg" alt="" />
+						<div class="info1">
+							<strong>안산역</strong>
+						</div>
+						<div class="info2">
+							<select class="fl" title="도착지 선택">
+								<option>도착지 선택</option>
+							</select>
+						</div>
+					</li>
+				</ul>
+				<div class="courseResult mt20">총 여행 소요 시간은  <strong>7시간41분</strong> 입니다.</div>
+				<div class="courseBtn mt20">
+					<a href="#" class="courseSave">저장하기</a>
+					<a href="#" class="coursePrint">출력하기</a>
+				</div>
+			</div>
+			<!-- // contents  -->
+			<?
+				include $_SERVER["DOCUMENT_ROOT"]."/project/inc/topmove.html";
+			?>
+		</div>
+	</div>
+	<!-- // containerArea -->
+<?
+	include $_SERVER["DOCUMENT_ROOT"]."/project/inc/footer.html";
+?>

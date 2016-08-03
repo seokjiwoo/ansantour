@@ -1,0 +1,91 @@
+<?
+	include $_SERVER["DOCUMENT_ROOT"]."/project/inc/header.html";
+?>
+<?
+	$lnb07 ="on";
+	$category = "travelguide";
+	include $_SERVER["DOCUMENT_ROOT"]."/project/inc/lnb.html";
+?>
+			<!-- contents  -->
+			<div class="contents">
+				<div class="title_Area">
+					<h2>홍보책자 신청</h2>
+					<p class="location">
+						<a href="#">여행 길라잡이</a>&gt;
+						<strong>홍보책자 신청</strong>
+					</p>
+				</div>	
+				<div class="tables_st5">
+					<table summary="홍보책자 신청표입니다.(제목,주소,수취인,전화번호,핸드폰,내용)">
+						<caption>홍보책자 신청표</caption>
+						<colgroup>
+							<col width="15%">
+							<col width="85%">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">제목</th>
+								<td><input type="text" class="type01 w635 in1" title="제목" /></td>
+							</tr>
+							<tr>
+								<th scope="row">주소</th>
+								<td>
+									<ul>
+										<li>
+											<input type="text" class="type01 w50" title="우편번호앞자리" /> - 
+											<input type="text" class="type01 w50" title="우편번호뒷자리" />
+											<a href="#" class="btn white_m inblick">우편번호찾기</a>
+										</li>
+										<li class="mt5"><input type="text" class="type01 w550 in1" title="주소입력" /></li>
+										<li class="mt5"><input type="text" class="type01 w464 in1" title="나머지주소입력" /> * 나머지주소</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">수취인</th>
+								<td><input type="text" class="type01 w226 in1" title="수취인" /></td>
+							</tr>
+							<tr>
+								<th scope="row">전화번호</th>
+								<td>
+									<select class="w90" title="지역번호선택">
+										<option>선택</option>
+									</select> - 
+									<input type="text" class="type01 w50" title="전화번호 첫번째항목입력" /> - 
+									<input type="text" class="type01 w50" title="전화번호 두번째항목입력" />
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">핸드폰</th>
+								<td>
+									<select class="w90" title="핸드폰앞자리선택">
+										<option>선택</option>
+									</select> - 
+									<input type="text" class="type01 w50" title="핸드폰 첫번째항목입력" /> - 
+									<input type="text" class="type01 w50" title="핸드폰 두번째항목입력" />
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">내용</th>
+								<td><textarea class="w620 h168 in1" title="내용"></textarea></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="ovh mt20">
+					<ul class="boardBtnset fr">
+						<li><a href="#" class="btn gray_s">취소</a></li>
+						<li><a href="#" class="btn gray_s">신청</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- // contents  -->
+			<?
+				include $_SERVER["DOCUMENT_ROOT"]."/project/inc/topmove.html";
+			?>
+		</div>
+	</div>
+	<!-- // containerArea -->
+<?
+	include $_SERVER["DOCUMENT_ROOT"]."/project/inc/footer.html";
+?>

@@ -1,0 +1,122 @@
+<?
+	if ($category == "sightseeing") {
+?>
+<!-- containerArea -->
+<div class="containerArea">
+	<div class="container" id="container">
+		<div class="lnb">
+			<div class="lnbtit bg1"><h2>Ansan Tour</h2></div>
+			<ul>
+				<li class="<?=$lnb01;?>"><a href="#">Virtual Tour</a>
+				<li class="<?=$lnb02;?>"><a href="#">Tour Photos</a></li>
+				<li class="<?=$lnb03;?>"><a href="#">Attractions</a>
+				<li class="<?=$lnb04;?>"><a href="#">Heritage</a>
+					<ul>
+						<li><a href="#">문화 인물</a></li>
+						<li><a href="#">문화 유적지</a></li>
+					</ul>
+				</li>
+				<li class="<?=$lnb05;?>"><a href="#">Museum &amp; Exhibition</a></li>
+			</ul>
+		</div>
+<?
+	} else if ($category == "theme") {
+?>
+<!-- containerArea -->
+<div class="containerArea" id="container">
+	<div class="container">
+		<div class="lnb">
+			<div class="lnbtit bg2"><h2>Ansan City Tour</h2></div>
+			<ul>
+				<li class="<?=$lnb01;?>"><a href="#">코스관광</a>
+					<ul>
+						<li><a href="#">반일 코스</a></li>
+						<li><a href="#">1일코스</a></li>
+						<li><a href="#">2일코스</a></li>
+						<li><a href="#">안산시티투어</a></li>
+						<li><a href="#">여행코스 짜기</a></li>
+					</ul>
+				</li>
+				<li class="<?=$lnb02;?>"><a href="#">Experience Tour</a></li>
+				<li class="<?=$lnb03;?>"><a href="#">Filming Location</a></li>
+				<li class="<?=$lnb04;?>"><a href="#">Trekking Tour</a></li>
+			</ul>
+		</div>
+<?
+	} else if ($category == "festivities") {
+?>
+<div class="containerArea" id="container">
+	<div class="container">
+		<div class="lnb">
+			<div class="lnbtit bg3"><h2>Festival</h2></div>
+			<ul>
+				<li class="<?=$lnb01;?>"><a href="#">이달의 행사</a></li>
+				<li class="<?=$lnb02;?>"><a href="#">축제문화 행사</a></li>
+			</ul>
+		</div>
+<?
+	} else if ($category == "food") {
+?>
+<div class="containerArea" id="container">
+	<div class="container">
+		<div class="lnb">
+			<div class="lnbtit bg4"><h2>Food &amp; stay &amp; Shopping</h2></div>
+			<ul>
+				<li class="<?=$lnb01;?>"><a href="#">음식</a></li>
+				<li class="<?=$lnb02;?>"><a href="#">숙소</a>
+					<ul>
+						<li><a href="#">관광호텔</a></li>
+						<li><a href="#">대부도 팬션</a></li>
+					</ul>
+				</li>
+				<li class="<?=$lnb03;?>"><a href="#">Souvenir</a></li>
+				<li class="<?=$lnb04;?>"><a href="#">Shopping Street</a>
+					<ul>
+						<li><a href="#">쇼핑</a></li>
+						<li><a href="#">관광쿠폰</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+<?
+	} else if ($category == "community") {
+?>
+<div class="containerArea" id="container">
+	<div class="container">
+		<div class="lnb">
+			<div class="lnbtit bg6"><h2>여행 커뮤니티</h2></div>
+			<ul>
+				<li class="<?=$lnb01;?>"><a href="#">관광홍보 동영상</a></li>
+				<li class="<?=$lnb02;?>"><a href="#">안산관광 SNS</a></li>
+				<li class="<?=$lnb03;?>"><a href="#">안산관광 블로그</a></li>
+				<li class="<?=$lnb04;?>"><a href="#">관광 Q&amp;A</a></li>
+				<li class="<?=$lnb05;?>"><a href="#">여행후기</a></li>
+			</ul>
+		</div>
+<?
+	} else if ($category == "info") {
+?>
+<div class="containerArea" id="container">
+	<div class="container">
+		<div class="lnb">
+			<div class="lnbtit bg7"><h2>이용안내</h2></div>
+			<ul>
+				<li class="<?=$lnb01;?>"><a href="#">Video</a></li>
+				<li class="<?=$lnb02;?>"><a href="#">SNS</a></li>
+				<li class="<?=$lnb03;?>"><a href="#" class="letter3">Tour map</a></li>
+			</ul>
+		</div>
+<?
+	} else if ($category == "search") {
+?>
+<div class="containerArea" id="container">
+	<div class="container">
+		<div class="lnb">
+			<div class="lnbtit bg7"><h2>통합검색</h2></div>
+			<ul>
+				<li class="<?=$lnb01;?>"><a href="#">통합검색</a></li>
+			</ul>
+		</div>	
+<?
+	}
+?>

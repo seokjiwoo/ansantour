@@ -1,0 +1,376 @@
+<?
+	include $_SERVER["DOCUMENT_ROOT"]."/project/inc/header.html";
+?>
+<?
+	$lnb01 ="on";
+	$category = "search";
+	include $_SERVER["DOCUMENT_ROOT"]."/project/inc/lnb.html";
+?>
+		<!-- contents  -->
+		<div class="contents">
+
+			<ul class="allsearchWrap mt20">
+				<li class="fl">
+					<div class="allsearchArea">
+						<select class="allsearchSelect" title="통합검색선택">
+							<option>통합검색</option>
+						</select>
+						<div class="allsearchBox">
+							<input type="text" class="allsearchInput" title="통합검색어입력" />
+						</div>
+						<button class="allsearchBtn"><img src="../images/btn/allsearch_btn.jpg" alt="검색" /></button>
+					</div>
+				</li>
+				<li class="fr">
+					<ul class="searchMenu mt10">
+						<li>
+							<span>
+								<input type="checkbox" id="inSearch" />
+								<label for="inSearch">결과내 검색</label>
+							</span>
+						</li>
+						<li><a href="#" class="searchShow">상세검색</a></li>
+						<li><a href="#" class="searchTip">도움말</a></li>
+					</ul>
+				</li>
+			</ul>
+
+			<div class="searchOption mt10">
+				<ul class="opationList">
+					<li>
+						<a href="#">기본검색</a>
+						<ul class="ul01">
+							<li><input type="text" class="type01 w230" title="기본검색" /></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">검색범위</a>
+						<ul>
+							<li>
+								<input type="checkbox" id="ar1" />
+								<label for="ar1">전체</label>
+							</li>
+							<li>
+								<input type="checkbox" id="ar2" />
+								<label for="ar2">제목</label>
+							</li>
+							<li>
+								<input type="checkbox" id="ar3" />
+								<label for="ar3">본문</label>
+							</li>
+							<li>
+								<input type="checkbox" id="ar4" />
+								<label for="ar4">첨부파일</label>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">검색제외 단어</a>
+						<ul class="ul02">
+							<li><input type="text" class="type01 w230" title="검색제외단어입력" /></li>
+							<li>불리언검색</li>
+							<li>
+								<input type="radio" name="bool" id="bl1" checked="checked" />
+								<label for="bl1">모두포함</label>
+							</li>
+							<li>
+								<input type="radio" name="bool" id="bl2" />
+								<label for="bl2">하나이상 포함</label>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">검색범위</a>
+						<ul class="ul02">
+							<li>
+								<input type="radio" name="period" id="pe1" />
+								<label for="pe1">전체</label>
+							</li>
+							<li>
+								<input type="radio" name="period" id="pe2" />
+								<label for="pe2">1주일이내</label>
+							</li>
+							<li>
+								<input type="radio" name="period" id="pe3" />
+								<label for="pe3">30일이내</label>
+							</li>
+							<li class="li04">
+								<input type="radio" name="period" id="pe4" />
+								<label for="pe4">기간선택</label>
+							</li>
+							<li>
+								<div class="dateSelect">
+									<input type="text" class="type01 w106 datepicker" readonly title="기간시작일선택" />
+								</div>
+							</li>
+							<li>
+								<div class="dateSelect"> 
+									<input type="text" class="type01 w106 datepicker" readonly title="기간종료일선택" />
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<div class="searchBtnset mt20">
+					<a href="#" class="btn gray_s">초기화</a>
+					<a href="#" class="btn gray_s">검색</a>
+					<a href="#" class="btn gray_s closeSoption">닫기</a>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$( ".datepicker" ).datepicker({
+					inline: true,
+					zIndex:100,
+					showButtonPanel: true, 
+			           currentText: '오늘 날짜', 
+			           closeText: '닫기'
+				});
+			</script>
+
+			<dl class="topSearches mt10">
+				<dt>인기검색어</dt>
+				<dd><a href="#">안산시청</a></dd>
+				<dd><a href="#">후원</a></dd>
+				<dd><a href="#">총무과</a></dd>
+				<dd><a href="#">민원안내</a></dd>
+			</dl>
+
+			<ul class="tabMenu mt30">
+				<li class="on"><a href="#">전체</a></li>
+				<li><a href="#">관광명소</a></li>
+				<li><a href="#">테마관광</a></li>
+				<li><a href="#">축제</a></li>
+				<li class="line2"><a href="#">맛집/<br>숙박쇼핑</a></li>
+				<li class="line2"><a href="#">여행<br>길라잡이</a></li>
+				<li class="line2"><a href="#">여행<br>커뮤니티</a></li>
+			</ul>
+
+			<div class="searchResult mt30">
+				<h2>[안산]에 대한 전체 검색 결과 30건 입니다.</h2>
+				<ul class="mt10">
+					<li><a href="#">카테고리 <span>(5/70)</span></a></li>
+					<li><a href="#">직원업무 <span>(5/308) </span></a></li>
+					<li><a href="#">웹페이지 <span>(5/157)</span></a></li>
+					<li><a href="#">게시판 <span>(5/5,628)</span></a></li>
+					<li><a href="#">첨부파일 <span>(5/2,002)</span></a></li>
+					<li><a href="#">SNS검색 <span>(5/1,169)</span></a></li>
+				</ul>
+			</div>
+
+			<div class="searchtitBox mt20">
+				<div class="sTit">
+					<h3>카테고리 <span>[ 검색결과 70건 ]</span></h3>
+					<a href="#" class="sMore">검색 결과 더보기</a>
+				</div>
+				<ul class="catList mt20">
+					<li><a href="#">관광명소 &gt; 안내 > 안산지도</a></li>
+					<li><a href="#">테마관광 &gt;  물절약관련홍보 &gt;  안산의자랑 '상록水'</a></li>
+					<li><a href="#">축제 &gt;  사업소소개 > 오시는 길&gt;  안산정수장</a></li>
+					<li><a href="#">맛집/숙박/쇼핑 &gt;  시정안내 &gt;  시정운영 &gt; 2015년 안산명소</a></li>
+					<li><a href="#">여행길라잡이 &gt; 분야별정보 &gt; 환경 &gt; 안산문화재</a></li>
+				</ul>
+			</div>
+
+			<div class="searchtitBox mt20">
+				<div class="sTit">
+					<h3>직원업무 <span>[ 검색결과 308건 ]</span></h3>
+					<a href="#" class="sMore">검색 결과 더보기</a>
+				</div>
+				<div class="tables_st6 mt20">
+					<table summary="직원업무안내표입니다.(소속,직급,성명,전화번호,업무내용)">
+						<caption>직원업무안내표</caption>
+						<colgrpup>
+							<col width="20%" />
+							<col width="20%" />
+							<col width="20%" />
+							<col width="20%" />
+							<col width="20%" />
+						</colgrpup>
+						<thead>
+							<tr>
+								<th scope="col">소속</th>
+								<th scope="col">직급</th>
+								<th scope="col">성명</th>
+								<th scope="col">전화번호</th>
+								<th scope="col">업무내용</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="fbd">안산</span>동</td>
+								<td>직원</td>
+								<td>강유미</td>
+								<td>481-5689</td>
+								<td>사회복지</td>
+							</tr>
+							<tr>
+								<td><span class="fbd">안산</span>동</td>
+								<td>직원</td>
+								<td>강유미</td>
+								<td>481-5689</td>
+								<td>사회복지</td>
+							</tr>
+							<tr>
+								<td><span class="fbd">안산</span>동</td>
+								<td>직원</td>
+								<td>강유미</td>
+								<td>481-5689</td>
+								<td>사회복지</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="searchtitBox mt20">
+				<div class="sTit">
+					<h3>웹페이지<span>[ 검색결과 157건 ]</span></h3>
+					<a href="#" class="sMore">검색 결과 더보기</a>
+				</div>
+				<ul class="webpageLiest mt20">
+					<li>
+						<div class="pageTit">
+							<a href="#">대부해솔길</a>
+							<span>2014-12-31</span>
+						</div>
+						<p>한국전기안전공사 <span class="fbd">안산</span>시흥지사(지사장 박한종)는 1일, 선부종합사회복지관 감사한 오후행사에 참여하여 한해동안의 봉사활동에 대한 나눔감사장을 수여받았다. 이는 도시락 배달 및 김장김치 만들기, 한마음 비빔밥 만들기 등 각종 행사와 기부활동에 대한...</p>
+						<span class="pageCat">[ 안산관광 &gt; 안산9경 &gt; 대부해솔길 ]</span>
+					</li>
+					<li>
+						<div class="pageTit">
+							<a href="#">대부해솔길</a>
+							<span>2014-12-31</span>
+						</div>
+						<p>한국전기안전공사 <span class="fbd">안산</span>시흥지사(지사장 박한종)는 1일, 선부종합사회복지관 감사한 오후행사에 참여하여 한해동안의 봉사활동에 대한 나눔감사장을 수여받았다. 이는 도시락 배달 및 김장김치 만들기, 한마음 비빔밥 만들기 등 각종 행사와 기부활동에 대한...</p>
+						<span class="pageCat">[ 안산관광 &gt; 안산9경 &gt; 대부해솔길 ]</span>
+					</li>
+					<li>
+						<div class="pageTit">
+							<a href="#">대부해솔길</a>
+							<span>2014-12-31</span>
+						</div>
+						<p>한국전기안전공사 <span class="fbd">안산</span>시흥지사(지사장 박한종)는 1일, 선부종합사회복지관 감사한 오후행사에 참여하여 한해동안의 봉사활동에 대한 나눔감사장을 수여받았다. 이는 도시락 배달 및 김장김치 만들기, 한마음 비빔밥 만들기 등 각종 행사와 기부활동에 대한...</p>
+						<span class="pageCat">[ 안산관광 &gt; 안산9경 &gt; 대부해솔길 ]</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="searchtitBox mt20">
+				<div class="sTit">
+					<h3>게시판 <span>[ 검색결과 5,628건 ]</span></h3>
+					<a href="#" class="sMore">검색 결과 더보기</a>
+				</div>
+				<ul class="webpageLiest mt20">
+					<li>
+						<div class="pageTit">
+							<a href="#">한국전기안전공사 <span class="fbd cblue2">안산</span>시흥지사, 한국전기공사협회 <span class="fbd cblue2">안산</span>협의회 송년의 밤 행사 참가  </a>
+							<span>2014-12-31</span>
+						</div>
+						<p>한국전기안전공사 <span class="fbd">안산</span>시흥지사(지사장 박한종)는 12일 한국전기공사협회 안산협의회에서 주관한 송년의 밤 행사에 참여하여 안산시, 시흥시 공사협의회, 한국전력기술인협회 등 여러 유관기관과의 유대강화 및 협력관계를 강화해 나가기로 하였다.</p>
+						<span class="pageCat">[ 여행커뮤니티  &gt; 시민참여 &gt; 자유게시판 ]</span>
+					</li>
+					<li>
+						<div class="pageTit">
+							<a href="#">한국전기안전공사 <span class="fbd cblue2">안산</span>시흥지사, 한국전기공사협회 <span class="fbd cblue2">안산</span>협의회 송년의 밤 행사 참가  </a>
+							<span>2014-12-31</span>
+						</div>
+						<p>한국전기안전공사 <span class="fbd">안산</span>시흥지사(지사장 박한종)는 12일 한국전기공사협회 안산협의회에서 주관한 송년의 밤 행사에 참여하여 안산시, 시흥시 공사협의회, 한국전력기술인협회 등 여러 유관기관과의 유대강화 및 협력관계를 강화해 나가기로 하였다.</p>
+						<span class="pageCat">[ 여행커뮤니티  &gt; 시민참여 &gt; 자유게시판 ]</span>
+					</li>
+					<li>
+						<div class="pageTit">
+							<a href="#">한국전기안전공사 <span class="fbd cblue2">안산</span>시흥지사, 한국전기공사협회 <span class="fbd cblue2">안산</span>협의회 송년의 밤 행사 참가  </a>
+							<span>2014-12-31</span>
+						</div>
+						<p>한국전기안전공사 <span class="fbd">안산</span>시흥지사(지사장 박한종)는 12일 한국전기공사협회 안산협의회에서 주관한 송년의 밤 행사에 참여하여 안산시, 시흥시 공사협의회, 한국전력기술인협회 등 여러 유관기관과의 유대강화 및 협력관계를 강화해 나가기로 하였다.</p>
+						<span class="pageCat">[ 여행커뮤니티  &gt; 시민참여 &gt; 자유게시판 ]</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="searchtitBox mt20">
+				<div class="sTit">
+					<h3>첩무파일 <span>[ 검색결과 2,002건 ]</span></h3>
+					<a href="#" class="sMore">검색 결과 더보기</a>
+				</div>
+				<ul class="webpageLiest mt20">
+					<li>
+						<div class="pageTit pdf">
+							<a href="#"><span class="fbd cblue2">안산</span>시내권지도.pdf   </a>
+							<span>2014-12-31</span>
+						</div>
+						<p><span class="fbd">안산</span>시내권 관광지 안내지도</p>
+						<span class="pageCat">[ 여행길라잡이  &gt; 관광지도 다운로드 ]</span>
+					</li>
+					<li>
+						<div class="pageTit pdf">
+							<a href="#"><span class="fbd cblue2">안산</span>시내권지도.pdf   </a>
+							<span>2014-12-31</span>
+						</div>
+						<p><span class="fbd">안산</span>시내권 관광지 안내지도</p>
+						<span class="pageCat">[ 여행길라잡이  &gt; 관광지도 다운로드 ]</span>
+					</li>
+					<li>
+						<div class="pageTit pdf">
+							<a href="#"><span class="fbd cblue2">안산</span>시내권지도.pdf   </a>
+							<span>2014-12-31</span>
+						</div>
+						<p><span class="fbd">안산</span>시내권 관광지 안내지도</p>
+						<span class="pageCat">[ 여행길라잡이  &gt; 관광지도 다운로드 ]</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="searchtitBox bdr mt20">
+				<div class="sTit">
+					<h3>SNS 검색 <span>[ 검색결과 1,169건 ]</span></h3>
+					<a href="#" class="sMore">검색 결과 더보기</a>
+				</div>
+				<ul class="webpageLiest snsimgList mt20">
+					<li>
+						<img src="../images/img/snslist_thum.jpg" class="snsThum fl" alt="" />
+						<div>
+							<div class="pageTit">
+								<a href="#">한국전기안전공사 <span class="fbd cblue2">안산</span>시흥지사, 한국전기공사협회 <span class="fbd cblue2">안산</span>협의회 송년의 밤 행사 참가  </a>
+								<span>2014-12-31</span>
+							</div>
+							<p>한국전기안전공사 <span class="fbd">안산</span>시흥지사(지사장 박한종)는 12일 한국전기공사협회 안산협의회에서 주관한 송년의 밤 행사에 참여하여 안산시, 시흥시 공사협의회, 한국전력기술인협회 등 여러 유관기관과의 유대강화 및 협력관계를 강화해 나가기로 하였다.</p>
+							<span class="pageCat">[ 여행커뮤니티  &gt; 시민참여 &gt; 자유게시판 ]</span>
+						</div>
+					</li>
+					<li>
+						<img src="../images/img/snslist_thum.jpg" class="snsThum fl" alt="" />
+						<div>
+							<div class="pageTit">
+								<a href="#">한국전기안전공사 <span class="fbd cblue2">안산</span>시흥지사, 한국전기공사협회 <span class="fbd cblue2">안산</span>협의회 송년의 밤 행사 참가  </a>
+								<span>2014-12-31</span>
+							</div>
+							<p>한국전기안전공사 <span class="fbd">안산</span>시흥지사(지사장 박한종)는 12일 한국전기공사협회 안산협의회에서 주관한 송년의 밤 행사에 참여하여 안산시, 시흥시 공사협의회, 한국전력기술인협회 등 여러 유관기관과의 유대강화 및 협력관계를 강화해 나가기로 하였다.</p>
+							<span class="pageCat">[ 여행커뮤니티  &gt; 시민참여 &gt; 자유게시판 ]</span>
+						</div>
+					</li>
+					<li>
+						<img src="../images/img/snslist_thum.jpg" class="snsThum fl" alt="" />
+						<div>
+							<div class="pageTit">
+								<a href="#">한국전기안전공사 <span class="fbd cblue2">안산</span>시흥지사, 한국전기공사협회 <span class="fbd cblue2">안산</span>협의회 송년의 밤 행사 참가  </a>
+								<span>2014-12-31</span>
+							</div>
+							<p>한국전기안전공사 <span class="fbd">안산</span>시흥지사(지사장 박한종)는 12일 한국전기공사협회 안산협의회에서 주관한 송년의 밤 행사에 참여하여 안산시, 시흥시 공사협의회, 한국전력기술인협회 등 여러 유관기관과의 유대강화 및 협력관계를 강화해 나가기로 하였다.</p>
+							<span class="pageCat">[ 여행커뮤니티  &gt; 시민참여 &gt; 자유게시판 ]</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<!-- contents  -->
+		<?
+			include $_SERVER["DOCUMENT_ROOT"]."/project/inc/topmove.html";
+		?>
+	</div>
+</div>
+<!-- // containerArea -->
+<?
+	include $_SERVER["DOCUMENT_ROOT"]."/project/inc/footer.html";
+?>

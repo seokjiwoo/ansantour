@@ -1,0 +1,90 @@
+<?
+	include $_SERVER["DOCUMENT_ROOT"]."/project/inc/header.html";
+?>
+<?
+	$lnb04 ="on";
+	$category = "community";
+	include $_SERVER["DOCUMENT_ROOT"]."/project/inc/lnb.html";
+?>
+		<!-- contents  -->
+		<div class="contents">
+			<div class="title_Area">
+				<h2>관광 Q&amp;A</h2>
+				<p class="location">
+					<a href="#">여행 커뮤니티</a>&gt;
+					<strong>관광 Q&amp;A</strong>
+				</p>
+			</div>
+			<div class="tables_st5">
+				<table summary="관광&amp;A 쓰기표입니다.(제목,작성자,이메일,휴대폰,비밀번호,내용,첨부파일)">
+					<caption>관광&amp;A 쓰기표</caption>
+					<colgroup>
+						<col width="15%">
+						<col width="85%">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">제목</th>
+							<td><input type="text" class="type01 w635 in1" title="제목" /></td>
+						</tr>
+						<tr>
+							<th scope="row">작성자</th>
+							<td><input type="text" class="type01 w226 in1" title="작성자" /></td>
+						</tr>
+						<tr>
+							<th scope="row">이메일</th>
+							<td>
+								<input type="text" class="type01 w82" title="이메일첫번째항목입력" /> @
+								<input type="text" class="type01 w82" title="이메일두번째항목입력" />
+								<select class="w90" title="이메일선택">
+									<option>선택</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">휴대폰</th>
+							<td>
+								<select class="w90" title="핸드폰앞자리선택">
+										<option>선택</option>
+									</select> - 
+								<input type="text" class="type01 w50" title="핸드폰 첫번째항목입력" /> - 
+								<input type="text" class="type01 w50" title="핸드폰 두번째항목입력" />
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">비밀번호</th>
+							<td>
+								<ul>
+									<li class="fl"><input type="password" class="type01 w226" title="비밀번호" /></li>
+									<li class="fr mfl">글을 수정 및 삭제하실 때 필요합니다.</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">내용</th>
+							<td><img src="../images/img/editor.jpg" width="100%" alt="에디터기능추가" /></td>
+						</tr>
+						<tr>
+							<th scope="row">첨부파일</th>
+							<td><input type="file" title="첨부파일" /></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="ovh mt20">
+				<ul class="boardBtnset fr">
+					<li><a href="#" class="btn gray_s">취소</a></li>
+					<li><a href="#" class="btn gray_s">등록</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- contents  -->
+		<?
+			include $_SERVER["DOCUMENT_ROOT"]."/project/inc/topmove.html";
+		?>
+	</div>
+</div>
+<!-- // containerArea -->
+<?
+	include $_SERVER["DOCUMENT_ROOT"]."/project/inc/footer.html";
+?>

@@ -1,0 +1,282 @@
+<?
+	include $_SERVER["DOCUMENT_ROOT"]."/project/inc/header.html";
+?>
+		<!-- visualArea  -->
+		<div class="visualArea">
+			<div class="sliderArea" id="sliderArea1">
+				<div class="buttonSet">
+					<ul>
+						<li class="on"><a href="#"><span class="blind">메인배너첫번째버튼</span></a></li>
+						<li><a href="#"><span class="blind">메인배너두번째버튼</span></a></li>
+						<li><a href="#"><span class="blind">메인배너세번째버튼</span></a></li>
+					</ul>
+					<a href="#" class="stop"><img src="./images/btn/slider_stop.jpg" alt="정지" /></a>
+				</div>
+				<div class="imageSlider">
+					<a href="#"><img src="./images/img/vi02.jpg" alt="메인배너1" /></a>
+					<a href="#"><img src="./images/img/vi03.jpg" alt="메인배너2" /></a>
+					<a href="#"><img src="./images/img/vi01.jpg" alt="메인배너3" /></a>
+				</div>
+			</div>				
+		</div>
+		<!-- // visualArea  -->
+
+		
+		<div class="visualArea">
+			<div class="sliderArea" id="sliderArea2">
+				<div class="buttonSet">
+					<ul>
+						<li class="on"><a href="#"><span class="blind">메인배너첫번째버튼</span></a></li>
+						<li><a href="#"><span class="blind">메인배너두번째버튼</span></a></li>
+						<li><a href="#"><span class="blind">메인배너세번째버튼</span></a></li>
+					</ul>
+					<a href="#" class="stop"><img src="./images/btn/slider_stop.jpg" alt="정지" /></a>
+				</div>
+				<div class="imageSlider">
+					<a href="#"><img src="./images/img/vi02.jpg" alt="메인배너1" /></a>
+					<a href="#"><img src="./images/img/vi03.jpg" alt="메인배너2" /></a>
+					<a href="#"><img src="./images/img/vi01.jpg" alt="메인배너3" /></a>
+				</div>
+			</div>				
+		</div>
+		
+
+		<!-- 모바일,테블릿 이미지슬라이더-->
+		<div class="slider mt7">
+			<div class="flexslider">
+				<ul class="slides">
+					<li><a href="#"><img src="./images/img/vi01.jpg" alt="메인배너1" /></a></li>
+					<li><a href="#"><img src="./images/img/vi01.jpg" alt="메인배너2" /></a></li>
+					<li><a href="#"><img src="./images/img/vi01.jpg" alt="메인배너3" /></a></li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(window).load(function(){
+				$('.flexslider').flexslider({
+					  animation: "slide",
+					  pausePlay: false,
+					  pauseText: "",
+					  playText: ""
+				});
+			});
+		</script>
+		<!-- 모바일,테블릿 이미지슬라이더-->
+		
+		<!-- sectionWrap  -->
+		<div class="sectionWrap">
+			<div class="mainSection">
+				<div class="sParent">
+					<div class="section01">
+						<a href="#">
+							<img src="./images/img/section01.jpg" alt="사이버투어" />
+							<h2 class="tit">사이버투어</h2>
+							<span>주요관광지를 한눈에 보실 수 있습니다.</span>
+						</a>
+					</div>
+					<div class="section02">
+						<a href="#">
+							<img src="./images/img/section02.jpg" alt="여행코스짜기" />
+							<h2 class="tit">여행코스짜기</h2>
+							<span>나만의 여행코스를 자유롭게 구성할 수 있습니다.</span>
+						</a>
+					</div>
+					<div class="section03">
+						<div>
+							<h2 class="tit">추천여행지</h2>
+							<a href="#" class="more"><img src="./images/img/more.jpg" alt="더보기" /></a>
+						</div>
+						<a href="#" class="thum">
+							<img src="./images/img/thum.jpg" alt="추천여행지" />
+							<span>
+								<em>대부도 걷기 좋은 길 ‘대부 해솔길’</em>
+								대부도 걷기 좋은 '길' 조성사업은 웰빙관광, 체험관광 등 관광문화의 변화추세에 맞추어 ...
+							</span>
+						</a>
+					</div>
+					<!-- <div class="section04">
+						<ul>
+							<li>
+								<a href="#" class="thum">
+									<img src="./images/img/thum1.jpg" alt="추천여행지" />
+									<span>
+										<strong>교통 정보</strong>
+										안산 관광지 교통정보를 확인할 수 있습니다.
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="thum">
+									<img src="./images/img/thum2.jpg" alt="추천여행지" />
+									<span>
+										<strong>숙박 정보</strong>
+										안산 숙박 정보 검색 및 예약을 할 수 있습니다.
+									</span>
+								</a>
+							</li>
+						</ul>
+					</div> -->
+					<div class="section04">
+						<ul>
+							<li>
+								<a href="#" class="thum"><img src="./images/img/thum1.jpg" alt="추천여행지" />
+								</a>
+								<div>
+									<h2>교통 정보</h2>
+									<p>안산 관광지 교통정보를 확인할 수 있습니다.</p>
+								</div>
+							</li>
+							<li>
+								<a href="#" class="thum"><img src="./images/img/thum2.jpg" alt="추천여행지" /></a>
+								<div>
+									<h2>숙박 정보</h2>
+									<p>안산 숙박 정보 검색 및 예약을 할 수 있습니다.</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="section05">
+						<h2 class="tab1 on"><a href="#">알려드립니다.</a></h2>
+						<ul class="notice on">
+							<li>
+								<a href="#">
+									<span>녹색 해양관광도시 안산입니다.sdasdasasdasdasdas</span>
+									<span>2014-12-24</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>대부바다향기 테마파크에 새로...</span>
+									<span>2014-12-24</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>갯벌체험과 누에섬 등대전망대...</span>
+									<span>2014-12-24</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>갯벌체험과 누에섬 등대전망대...</span>
+									<span>2014-12-24</span>
+								</a>
+							</li>
+						</ul>
+						<h2 class="tab2"><a href="#">Q&amp;A</a></h2>
+						<ul class="notice">
+							<li>
+								<a href="#">
+									<span>sdasdasasdasdasdassdasdasasdasdasdas</span>
+									<span>2014-12-25</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>sdasdasasdasdasdassdasdasasdasdasdas</span>
+									<span>2014-12-25</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>sdasdasasdasdasdassdasdasasdasdasdas</span>
+									<span>2014-12-25</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>sdasdasasdasdasdassdasdasasdasdasdas</span>
+									<span>2014-12-25</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="section06">
+						<h2>SNS</h2>
+						<a href="#" class="snsbtn sns01"><img src="./images/img/sns01.jpg" alt="트위터" /></a>
+						<div class="snsBox">
+							<div class="snsTop">
+								<em>트윗</em>
+								<a href="#"><img src="./images/btn/snsbtn01.jpg" alt="팔로우" /></a>
+							</div>
+							<div class="snsScroll">
+								<ul>
+									<li>
+										<a href="#">
+											<span class="snsInfo">
+												<span class="snsthum">
+													<img src="./images/img/thum3.jpg" alt="썸네일" />
+													<span>
+														<em>안산시청</em>
+														@ansancityhall
+													</span>
+												</span>
+												<span class="date">12월 9일</span>
+											</span>
+											<span class="snsText">
+												또 염부의 땀방울이 더해진 소금...."천일염"이죠.안산 대부도에도 3대를 이어 명품 천일염을 생산하는
+												"동주염전"이 있답니다.... http://fb.me/3mg2VVrXN
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="snsInfo">
+												<span class="snsthum">
+													<img src="./images/img/thum3.jpg" alt="썸네일" />
+													<span>
+														<em>안산시청</em>
+														@ansancityhall
+													</span>
+												</span>
+												<span class="date">12월 9일</span>
+											</span>
+											<span class="snsText">
+												또 염부의 땀방울이 더해진 소금...."천일염"이죠.안산 대부도에도 3대를 이어 명품 천일염을 생산하는
+												"동주염전"이 있답니다.... http://fb.me/3mg2VVrXN
+											</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<a href="#" class="snsbtn sns02"><img src="./images/img/sns02.jpg" alt="페이스북" /></a>
+						<a href="#" class="snsbtn sns03"><img src="./images/img/sns03.jpg" alt="밴드" /></a>
+					</div>
+				</div>
+				<div class="bannerSlider">
+					<div class="control">
+						<div>
+							<a href="#" class="prev"><img src="./images/btn/bnr_prevbtn.jpg" alt="이전" /></a>
+							<a href="#" class="next"><img src="./images/btn/bnr_nextbtn.jpg" alt="다음" /></a>
+						</div>
+						<div>
+							<a href="#" class="public_stop"><img src="./images/btn/bnr_stopbtn.jpg" alt="정지"></button>
+							<a href="#" class="public_play"><img src="./images/btn/bnr_infobtn.jpg" alt="재생"></a>
+						</div>
+					</div>
+					<div class="public_link">
+						<div class="publics">
+							<div class="public_link_wrap">
+								<ul>
+									<li><a href="#"><img src="./images/img/bnr01.jpg" alt="안산시청방송국" /></a></li>
+									<li><a href="#"><img src="./images/img/bnr02.jpg" alt="안산시의료관광지원센터" /></a></li>
+									<li><a href="#"><img src="./images/img/bnr03.jpg" alt="안산시 시민이 행복한 복지안산" /></a></li>
+									<li><a href="#"><img src="./images/img/bnr04.jpg" alt="대한민국구석구석" /></a></li>
+									<li><a href="#"><img src="./images/img/bnr05.jpg" alt="경기관광공사" /></a></li>
+									<li><a href="#"><img src="./images/img/bnr06.jpg" alt="성호기념관" /></a></li>
+									<li><a href="#"><img src="./images/img/bnr07.jpg" alt="시화조력발전소" /></a></li>
+									<li><a href="#"><img src="./images/img/bnr01.jpg" alt="안산시청방송국" /></a></li>
+									<li><a href="#"><img src="./images/img/bnr02.jpg" alt="안산시의료관광지원센터" /></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="hidebox"></div>
+				</div>
+			</div>
+		</div>
+		<!-- // sectionWrap  -->	
+<?
+	include $_SERVER["DOCUMENT_ROOT"]."/project/inc/footer.html";
+?>

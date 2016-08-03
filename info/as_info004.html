@@ -1,0 +1,53 @@
+<?
+	include $_SERVER["DOCUMENT_ROOT"]."/project/inc/header.html";
+?>
+<?
+	$lnb04 ="on";
+	$category = "info";
+	include $_SERVER["DOCUMENT_ROOT"]."/project/inc/lnb.html";
+?>
+		<!-- contents  -->
+		<div class="contents">
+			<div class="title_Area">
+				<h2>홈페이지개선신고 <span>/ 이용안내</span></h2>
+				<p class="location">
+					<a href="#">이용안내</a>&gt;
+					<strong>홈페이지개선신고</strong>
+				</p>
+			</div>
+			<div class="tables_st5">
+				<table summary="홈페이지개선신고 표입니다.(제목,내용)">
+					<caption>홈페이지개선신고 표</caption>
+					<colgroup>
+						<col width="15%">
+						<col width="85%">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">제목</th>
+							<td><input type="text" class="type01 w635 in1" title="제목" /></td>
+						</tr>
+						<tr>
+							<th scope="row">내용</th>
+							<td><textarea class="w620 h385 in1" title="내용"></textarea></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="ovh mt20">
+				<ul class="boardBtnset fr">
+					<li><a href="#" class="btn gray_s">취소</a></li>
+					<li><a href="#" class="btn gray_s">신고</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- contents  -->
+		<?
+			include $_SERVER["DOCUMENT_ROOT"]."/project/inc/topmove.html";
+		?>
+	</div>
+</div>
+<!-- // containerArea -->
+<?
+	include $_SERVER["DOCUMENT_ROOT"]."/project/inc/footer.html";
+?>

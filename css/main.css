@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* 메인 롤링배너 */
+.visualArea{position:relative;height:209px;}
+.visualArea .sliderArea{width:100%;max-width:1280px;height:209px;overflow: hidden;margin: 0 auto;text-align: center;position: relative;}
+.visualArea .imageSlider{position:relative;width:100%;min-width:1280px;height:209px;overflow:hidden;}
+.visualArea .imageSlider > a{position:absolute;left:0;top:0;width:1280px;height:209px;display:block;}
+.visualArea .buttonSet{position:absolute;right:143px;top:173px;z-index:300;overflow:hidden;}
+.visualArea .buttonSet ul{overflow:hidden;float:left;}
+.visualArea .buttonSet ul > li{float:left;margin-right:10px;}
+.visualArea .buttonSet ul > li > a{width:20px;height:20px;line-height:20px;display:block;background:#fff;}
+.visualArea .buttonSet ul > li.on a{background:#7bb330;}
+.visualArea .buttonSet .stop{float:left;}
+
+/* 사이버투어 , 여행코스짜기 */
+.sectionWrap{margin-top:14px;}
+.mainSection{background:url("../images/img/section_bg.jpg") repeat-x 0 0;padding-bottom:26px;}
+.mainSection .sParent{width:996px;margin:0 auto;*zoom:1;}
+.mainSection .sParent:after{content:"";display:block;clear:both;}
+.mainSection .section01,
+.mainSection .section02,
+.mainSection .section03{width:318px;height:188px;border:1px solid #d7d7d7;}
+
+.mainSection .section01{float:left;}
+.mainSection .section02{float:left;margin-left:18px;}
+.mainSection .section01 a,
+.mainSection .section02 a{display:block;}
+.mainSection .section01 a > img,
+.mainSection .section02 a > img{vertical-align:top;}
+.mainSection .section01 a > span,
+.mainSection .section02 a > span{display:block;padding:1px 0 1px 43px;line-height:21px;color:#626262;/* font-size:14px; */}
+.mainSection .tit{height:42px;line-height:42px;display:block;padding-left:43px;font-weight:bold;background:url("../images/icon/star_blt.jpg") no-repeat 11px 0;font-size:24px;}
+
+/* 추천여행지 */
+.mainSection .section03{float:left;margin-left:18px;}
+.mainSection .section03 > div{overflow:hidden;padding-right:20px;}
+.mainSection .section03 .tit{float:left;}
+.mainSection .section03 .more{float:right;margin-top:15px;}
+.mainSection .section03 .thum{display:block;overflow:hidden;padding:0 20px 0 20px;margin-top:20px;font-family:"돋움",dotum}
+.mainSection .section03 .thum img{float:left;margin-right:10px;}
+.mainSection .section03 .thum span{display:block;height:104px;overflow:hidden;color:#898989;line-height:21px;}
+.mainSection .section03 .thum em{display:block;font-weight:bold;}
+
+/* 교통정보, 숙박정보 */
+.mainSection .section05,
+.mainSection .section06{width:318px;height:187px;border:1px solid #d7d7d7;}
+.mainSection .section05{float:left;background:#fff;position:relative;}
+.mainSection .section06{float:right;background:#fff;position:relative;}
+
+.mainSection .section04{float:left;width:320px;height:187px;margin-top:30px;}
+.mainSection .section04 ul > li{height:90px;border:1px solid #d7d7d7;background:#fff;overflow:hidden;}
+
+.ie7 .mainSection .section04 ul > li{height:88px;}
+.mainSection .section04 ul > li:first-child + li{margin-top:5px;}
+.mainSection .section04 .thum{float:left;margin-right:10px;}
+.mainSection .section04 .thum > img{width:134px;}
+.mainSection .section04 ul > li > div{float:left;width:150px;margin-top:10px;}
+.mainSection .section04 ul > li > div > h2{line-height:18px;font-weight:bold;font-size:18px;}
+.mainSection .section04 ul > li > div > p{margin-top:10px;line-height:20px;}
+
+/* 알려드립니다, Q&A */
+.mainSection .section05{float:left;margin-left:18px;margin-top:30px;}
+.mainSection .section05 h2 > a{display:block;}
+.mainSection .section05 h2.tab1,
+.mainSection .section05 h2.tab2{width:159px;height:37px;line-height:37px;text-align:center;font-weight:bold;font-size:18px;}
+.mainSection .section05 h2.tab1{position:absolute;left:0;top:0;}
+.mainSection .section05 h2.tab2{position:absolute;left:159px;top:0;}
+
+.mainSection .section05 > h2.on > a{background:#7bb330;color:#fff;}
+.mainSection .section05 .notice{display:none;position:absolute;top:37px;left:0;width:100%;padding-top:12px;border-top:1px solid #d7d7d7;font-family:"돋움",dotum;}
+.mainSection .section05 .notice.on{display:block;}
+.mainSection .section05 .notice li a{padding:8px 24px 8px 32px;display:block;background:url("../images/icon/dot1.jpg") no-repeat 20px center;overflow:hidden;}
+.mainSection .section05 .notice li a span{float:left;color:#434343;}
+.mainSection .section05 .notice li a span:first-child{width:169px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;}
+.mainSection .section05 .notice li a span:first-child + span{float:right;color:#898989;}
+
+/* SNS  */
+.mainSection .section06{float:left;margin-left:18px;margin-top:30px;}
+.mainSection .section06 > h2{width:60px;height:37px;line-height:37px;text-align:center;font-weight:bold;font-size:18px;margin-left:20px;}
+.mainSection .section06 > .snsbtn{position:absolute;width:38px;height:35px;display:block;}
+.mainSection .section06 > .sns01{right:78px;top:0;}
+.mainSection .section06 > .sns02{right:39px;top:0;}
+.mainSection .section06 > .sns03{right:0;top:0;}
+.mainSection .section06 .snsBox{position:absolute;left:0;top:35px;width:100%;border-top:1px solid #d7d7d7;}
+.mainSection .section06 .snsTop{overflow:hidden;padding:10px 20px;}
+.mainSection .section06 .snsTop em{float:left;display:block;font-weight:bold;font-size:14px;}
+.mainSection .section06 .snsTop a{width:65px;float:right;display:block;}
+.mainSection .section06 .snsScroll{height:97px;overflow:hidden;overflow-y:scroll;border-top:1px solid #f3f3f3;font-family:"돋움",dotum;}
+.mainSection .section06 .snsScroll ul li{padding:5px 0 12px;border-bottom:1px solid #f3f3f3;}
+.mainSection .section06 .snsScroll ul li a{display:block;padding:0 20px 0 20px;}
+.mainSection .section06 .snsInfo{display:block;overflow:hidden;}
+.mainSection .section06 .snsInfo .snsthum{float:left;display:block;overflow:hidden;}
+.mainSection .section06 .snsInfo .snsthum img{width:25px;float:left;margin-right:10px;vertical-align:top;}
+.mainSection .section06 .snsInfo .snsthum span{float:left;color:#898989;}
+.mainSection .section06 .snsInfo .snsthum span em{display:block;font-weight:bold;margin-bottom:2px;}
+.mainSection .section06 .snsInfo .date{float:right;margin-top:10px;}
+.mainSection .section06 .snsText{display:block;margin-top:14px;line-height:18px;color:#434343;} 
+
+/* 배너슬라이드  */
+.bannerSlider{width:996px;margin:34px auto 0 auto;overflow:hidden;}
+.public_link_wrap{width:943px;float:left;}
+.publics{width:943px;overflow:hidden;position:relative;}
+.publics > button{float:left; margin:12px 10px 0 10px;}
+.publics > button img{width:10px; height:auto;}
+.publics > button.next{position:absolute; top:22px; right:10px; margin:0;}
+.public_link_wrap{float:left; width:943px;overflow:hidden;}
+.public_link_wrap ul{padding:0; position:relative; margin:0 0 0 -3px;}
+.public_link_wrap li{float:left;margin:0 0 0 4px; position:relative;}
+.public_link li img{width:131px;height:43px;}
+.control{width:43px;float:left;margin-right:10px;}
+.control > div{overflow:hidden;}
+.control > div:first-child + div{margin-top:2px;}
+.control > div > a{width:19px;height:21px;display:block;}
+.control > div > a > img{vertical-align:top;}
+.control > div > a:first-child{float:left;}
+.control > div > a:first-child + a{float:right;}
+.bannerSlider .hidebox{display:none;position:absolute;right:0;top:0;z-index:200;width:6px;height:57px;display:block;background:#fff;}
+
+/* flexslider */
+.flexslider{display:none;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;text-align:} 
+.flexslider .slides img {width: 100%;display: block;/* min-height:209px; */}
+.flex-pauseplay span {text-transform: capitalize;}
+.flexslider{/*margin-bottom:60px;*/position: relative; }
+.flex-viewport { max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease; }
+.loading .flex-viewport { max-height: 300px; }
+.flexslider .slides { zoom: 1; }
+.carousel li { margin-right: 5px; }
+
+/* Direction Nav */
+.flex-direction-nav {*height: 0;}
+.flex-direction-nav a { text-decoration:none; display: block; width: 20px; height: 36px; margin: -20px 0 0; position: absolute; top: 50%; z-index: 10; overflow: hidden; /*opacity: 0;*/ cursor: pointer; color: rgba(0,0,0,0.8); text-shadow: 1px 1px 0 rgba(255,255,255,0.3); -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; }
+.flex-direction-nav .flex-prev { left: 0; width:20px;height:36px;background:url("../images/btn/slide_prev.png") no-repeat 0 0; background-size:20px;}
+.flex-direction-nav .flex-next { right: 0; text-align: right; width:20px;height:36px;background:url("../images/btn/slide_next.png") no-repeat 0 0;background-size:20px;}
+
+.ie7 .flex-direction-nav a,
+.ie8 .flex-direction-nav a{position:absolute;margin-top:-40px;top:50%;}
+.ie7 .flex-direction-nav .flex-prev, 
+.ie8 .flex-direction-nav .flex-prev{left:0;top:50%;width:40px;height:72px;background:url("../images/btn/slide_prev.png") no-repeat 0 0;/* background-size:20px;*/}
+.ie7 .flex-direction-nav .flex-next,
+.ie8 .flex-direction-nav .flex-next{right:0;width:40px;height:72px;background:url("../images/btn/slide_next.png") no-repeat 0 0;/*background-size:20px;*/}
+
+/* Control Nav */
+.flex-control-nav {width: 100%; position: absolute; bottom:5px; text-align: center;}
+.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-paging li a {width:20px; height:20px; display: block; background: #fff; /* background: rgba(0,0,0,0.5);  */cursor: pointer; text-indent: -9999px; /* -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); -o-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); box-shadow: inset 0 0 3px rgba(0,0,0,0.3);  */}
+/* .flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); } */
+.flex-control-paging li a.flex-active {background: #7bb230; /* background: rgba(0,0,0,0.9); cursor: default;  */}
+
+.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+.flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+.flex-control-thumbs img:hover {opacity: 1;}
+.flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
+
+.flex-pauseplay{position:absolute;left:0;bottom:5px;width:100%;text-align:center;}
+.flex-pauseplay a{width:20px;height:20px;display:inline-block;zoom: 1; *display: inline;margin-left:125px;cursor:pointer;background:url("../images/btn/slider_stop.jpg") no-repeat 0 0;}
+
+/* Cross-browser */
+.ie7 .mainSection .section05 .notice li a span,
+.ie8 .mainSection .section05 .notice li a span ,
+.ie9 .mainSection .section05 .notice li a span{padding-top:1px;}
+.ie7 .mainSection .section06 .snsTop em{padding-bottom:1px;}
+.ie7 .mainSection .section06 .snsInfo .snsthum span em,
+.ie7 .mainSection .section06 .snsInfo .date{padding-top:1px;}
+.ie8 .mainSection .section06 .snsInfo .snsthum span em,
+.ie8 .mainSection .section06 .snsInfo .date{padding-top:1px;}
+.ie9 .mainSection .section06 .snsInfo .snsthum span em,
+.ie9 .mainSection .section06 .snsInfo .date{padding-top:1px;}
+.ie7 .control > div > button,
+.ie8 .control > div > button,
+.ie9 .control > div > button{height:22px;}
